@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website</title>
     <style>
+      body {
+        background-color: gainsboro;
+      }
       #header {
         padding: 10px 200px;
-        background: #40e0d0;
+        background: aqua;
         color: white;
       }
       .headerDiv {
@@ -24,7 +27,27 @@
       .img {
         height: 200px;
         width: 200px;
-        border: 10px solid#40e0d0;
+        border: 10px solid aqua;
+      }
+      .specialText {
+        color: aqua;
+        text-transform: uppercase;
+      }
+      hr {
+        height: 3px;
+        background-color: aqua;
+      }
+      .content-div {
+        width: 900px;
+        margin: auto;
+        margin-top: 50px;
+      }
+      .about-me {
+        background-color: white;
+        padding: 5px 50px 20px 50px;
+      }
+      progress {
+        width: 400px;
       }
     </style>
   </head>
@@ -32,9 +55,27 @@
     <div class="headerDiv">
       <h1 id="header">Personal Website</h1>
       <div class="innerDiv">
-        <img src="img/1.png" alt="" class="img" />
-        <h1>DinIslam Hassan Robin</h1>
-        <p>Mern Stack Developer</p>
+        <img src="img/1.jpg" alt="" class="img" />
+        <h1>DinIslam<span class="specialText"> Hassan</span> Robin</h1>
+        <small>Mern Stack <span class="specialText">Developer</span></small>
+        <p>
+          Hello I am a full stack
+          <span class="specialText">web developer</span>.
+        </p>
+      </div>
+    </div>
+    <div class="content-div">
+      <div class="about-me">
+        <h1>About Me</h1>
+        <hr />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+          accusantium asperiores tempora saepe ab consectetur eius earum
+          consequuntur sunt velit. Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Molestias, quam! Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Aperiam ut tenetur, sint minima amet
+          totam itaque laboriosam suscipit temporibus nisi?
+        </p>
       </div>
     </div>
   </body>
